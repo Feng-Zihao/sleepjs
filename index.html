@@ -5,6 +5,17 @@
 </head>
 <script src='/sleep.js'></script>
 <body>
-hello
+  <span id='sample'></span>
+<script>
+sleep(1000).action(function() {
+  document.getElementById('sample').innerHTML = '1s';
+}).
+sleep(1000).action(function() {
+  document.getElementById('sample').innerHTML = '2s';
+}).
+sleep(1000).action(function(){
+  document.getElementById('sample').innerHTML = '3s';
+}).run();
+</script>
 </body>
 </html>
