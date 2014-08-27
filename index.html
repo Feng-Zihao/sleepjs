@@ -7,14 +7,17 @@
 <body>
   <span id='sample'></span>
 <script>
-sleep(1000).action(function() {
+sleep(1000).then(function() {
   document.getElementById('sample').innerHTML = '1s';
+  console.log(1);
 }).
-sleep(1000).action(function() {
+sleep(1000).then(function() {
   document.getElementById('sample').innerHTML = '2s';
+  console.log(2);
 }).
-sleep(1000).action(function(){
+sleep(1000).then(function(){
   document.getElementById('sample').innerHTML = '3s';
+  console.log(3);
 }).run();
 </script>
 </body>
